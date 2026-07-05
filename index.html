@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Universe Explorer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/galaxy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<div id="nebula"></div>
+
+<div class="landing">
+
+    <div class="hero">
+
+        <h1>Digital Universe</h1>
+
+        <p>
+            Explore the Internet as an interactive galaxy.
+            Discover connections between AI, Gaming,
+            Cloud, Music and more.
+        </p>
+
+        <button id="exploreBtn">
+            Explore Universe →
+        </button>
+
+    </div>
+
+</div>
+
+<div class="dashboard hidden">
+
+    <div class="logo">
+
+        <h2>Universe</h2>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+
+            <span>🪐</span>
+
+            <h3>Planets</h3>
+
+            <p id="planetCount">7</p>
+
+        </div>
+
+        <div class="card">
+
+            <span>⭐</span>
+
+            <h3>Stars</h3>
+
+            <p id="starCount">250</p>
+
+        </div>
+
+        <div class="card">
+
+            <span>⚡</span>
+
+            <h3>Energy</h3>
+
+            <p>92%</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="galaxy" class="hidden">
+
+    <div class="planet ai" data-name="Artificial Intelligence">
+
+        <div class="ring"></div>
+
+        <div class="planet-core"></div>
+
+        <span>AI</span>
+
+    </div>
+
+    <div class="planet gaming" data-name="Gaming">
+
+        <div class="ring"></div>
+
+        <div class="planet-core"></div>
+
+        <span>Gaming</span>
+
+    </div>
+
+    <div class="planet cloud" data-name="Cloud">
+
+        <div class="ring"></div>
+
+        <div class="planet-core"></div>
+
+        <span>Cloud</span>
+
+    </div>
+
+    <div class="planet music" data-name="Music">
+
+        <div class="ring"></div>
+
+        <div class="planet-core"></div>
+
+        <span>Music</span>
+
+    </div>
+
+    <div class="planet social" data-name="Social">
+
+        <div class="ring"></div>
+
+        <div class="planet-core"></div>
+
+        <span>Social</span>
+
+    </div>
+
+</div>
+
+<div id="infoPanel" class="hidden">
+
+    <h2 id="planetTitle">
+        Artificial Intelligence
+    </h2>
+
+    <div class="progress">
+
+        <label>Activity</label>
+
+        <div class="bar">
+            <div class="fill" style="width:88%"></div>
+        </div>
+
+    </div>
+
+    <div class="progress">
+
+        <label>Connections</label>
+
+        <div class="bar">
+            <div class="fill" style="width:72%"></div>
+        </div>
+
+    </div>
+
+    <div class="progress">
+
+        <label>Innovation</label>
+
+        <div class="bar">
+            <div class="fill" style="width:95%"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/stars.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/planets.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
